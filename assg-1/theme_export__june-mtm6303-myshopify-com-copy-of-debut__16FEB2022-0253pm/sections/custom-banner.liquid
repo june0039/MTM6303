@@ -1,0 +1,72 @@
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>This website uses cookies to enhance your experience and save your preferences. By using our website you consent
+  to using our cookies. You may refuse to accept or store cookies on your computer through the settings of your web browser.
+  Read our Website Privacy statement to learn more about the information collected. Our website displays the content in the default language 
+  of your browser.Learn how to change the language of your browser.</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<style>
+.alert {
+        background : {{ section.settings.background-color }};
+          color:{{ section.settings.font-color }};
+    }
+
+</style>  
+
+{% schema %}
+  {
+    "name": "Custom Banner",
+    "tag": "section",
+"class": "index-section--flush",
+
+"settings":
+          [{
+            "id": "custom_text_title",
+            "type": "text",
+            "label": "Banner Title",
+            "default": "Banner Title"
+        },  
+           {
+            "id": "custom_text_body",
+            "type": "richtext",
+            "label": "Banner Text",
+            "default": "<p>Add your text here</p>"
+        },
+        {
+            "type": "color",
+            "id": "background-color",
+            "label": "Background Color",
+            "default": "#fff3cd"
+        },
+        {
+            "type": "color",
+            "id": "font-color",
+            "label": "Font Color",
+            "default": "#664d03"
+        }
+    ],
+    "presets": [{
+        "name": "Custom Banner",
+        "category": "Custom"
+    }]
+}
+
+
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
+
+
+
+
+
+
+   
