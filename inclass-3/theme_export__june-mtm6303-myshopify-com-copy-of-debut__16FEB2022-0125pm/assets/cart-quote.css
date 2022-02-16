@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.otro-blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #4d2849 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.otro-blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#4d2849;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.otro-blockquote::after{
+  content: '';
+}
+
+.otro-blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+  
+  
+}function writeRandomQuote() {
+    var quotes = new Array();
+    quotes[0] = "Happiness is not in money, but in shopping.";
+    quotes[1] = "For some, shopping is an art; for others, it's a sport";
+    quotes[2] = "Whoever said money can't buy happiness simply didn't know where to go shopping.";
+    quotes[3] = "Show your confidence. Show you're not afraid. Go shopping.";
+    var rand = Math.floor(Math.random()*quotes.length);
+  	document.querySelector(".otro-blockquote").innerHTML = quotes[rand];
+}
+
+writeRandomQuote();
