@@ -1,4 +1,11 @@
+<!-- PHP Page for MTM6303 Final By: Julie Juneau -->
+
+
 <?php
+
+/* Navigation and Menu Bar */
+
+?>
 
 <div class="w3-top">
     <div class="w3-row w3-padding w3-black">
@@ -21,7 +28,9 @@
     </div>
 </div>
 
-<!-- Header with image -->
+<?php
+
+/* Header with image */
 
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
 
